@@ -88,7 +88,7 @@ padding-left: 15px;
 margin-left: 15px;
 line-height: 18px;
 color: #999;
-text-decoration: none;
+text-decoration: none !important;
 border-left: 1px solid #efefef;
 }
 
@@ -136,6 +136,10 @@ border: 1px solid #dddddd;
 
 /* portfolio page */
 
+
+
+
+}
 .work {
 position: relative;
 float: left;
@@ -174,6 +178,25 @@ width: 200px;
 height: auto;
 margin-top: 10px;
 margin-right: 25px;
+}
+
+.card-body {
+  background-color: #4aaaa5;
+}
+
+.card-body:hover {
+  background-color: aqua;
+}
+
+.card-title:hover {
+  background-color: aqua;
+
+}
+.card-title {
+  text-align: center;
+  background-color: none;
+  color: #eeeeee;
+  font-weight: bold;
 }
 
 /* contact page */
@@ -230,6 +253,49 @@ h1.display-4 {
     height: auto;
     float: left;
     margin: 5px 15px 0px 0px;
+}
 
+@media screen and (max-width: 640px) {
+    
+      .main-section {
+        width: 100%px;
+        margin-top: 10px;
+      }
+      .container {
+        width:100%;
+        position: static;
+      }
+      #main-container {
+        margin-top: 20px;
+        padding-top: 20px;
+      }
+      #logo {
+        width: 100%;
+      }
+
+      
+
+      
+      
+     
+      #masthead {
+        max-width: 100%;
+        clear: both;
+        position: static;
+      }
+      img.auth-image {
+        width: 100%;
+        height: auto;
+        margin-bottom: 20px !important;
+      }
+@media screen and (max-width:360px) {
+    .bioPic {
+        width: 100%;
+        height: auto:
+        float: none:
+    }
+    #logo {
+        width: 100% !important;
+      }
 
 }
